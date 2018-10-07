@@ -1,0 +1,38 @@
+
+
+    <div class="col-sm-4">
+        <h1>Create Category</h1>
+        <form action="/admin/categories/create" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" placeholder="Enter Category" name="name" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Create Category</button>
+        </form>
+
+    </div>
+
+    <br>
+    <hr>
+    
+    <div >
+        <h1>Categories</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+        {{#each category}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td><a href="/admin/categories/edit/{{id}}" class="btn btn-info">Edit</a></td>
+            </tr>
+        {{/each}}
+            </tbody>
+        </table>
+    </div>
