@@ -17,4 +17,4 @@ This website let user read other users blog post and also let them write their o
 •	The admin has access to all the public posts that are created by the user and at any point can delete the post that is against the community guidelines of the website.<br/>
 •	The admin has all the access to the messages that are sent by the user using the contact us form.<br/>
 
-## Build on: Node Js, Express, Mongodb, Handbrake.
+## Built on: Node Js, Express, Mongodb, Handbrake.
